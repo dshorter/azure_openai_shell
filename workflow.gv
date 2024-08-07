@@ -1,0 +1,17 @@
+// Workflow of Combining RAG and Grounding in a Legal AI System
+digraph {
+	"Query Received" [label="Query Received
+Lawyer asks a legal question"]
+	"Information Retrieval" [label="Information Retrieval
+RAG retrieves case law and analyses"]
+	"Response Generation" [label="Response Generation
+Model drafts a summary of findings"]
+	"Grounding and Verification" [label="Grounding and Verification
+Cross-check against legal texts and databases"]
+	"Final Response" [label="Final Response
+Provide verified, legally sound response"]
+	"Query Received" -> "Information Retrieval"
+	"Information Retrieval" -> "Response Generation"
+	"Response Generation" -> "Grounding and Verification"
+	"Grounding and Verification" -> "Final Response"
+}
