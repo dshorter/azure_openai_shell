@@ -1,6 +1,9 @@
 {
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python",
-    "python.terminal.activateEnvironment": true,  
+    "python.terminal.activateEnvironment": true,   
+    "files.autoSave": "onWindowChange",
+    "files.autoSaveDelay": 1000  // Only if you select "afterDelay", sets delay to 1 second
+
 }
 
 
