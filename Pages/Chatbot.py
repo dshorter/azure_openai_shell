@@ -47,7 +47,7 @@ if prompt := st.text_input("Ask a question"):
         model=azure_openai_deployment,
         messages=[
             {"role": m["role"], "content": m["content"]}
-            for m in st.session_state.messages
+            for m in st.session_state.messages  
         ],
         stream=True,
     )
